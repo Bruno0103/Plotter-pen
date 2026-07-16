@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<robot name="(Não" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find (Não_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find (Não_description)/urdf/(Não.trans" />
+<xacro:include filename="$(find (Não_description)/urdf/(Não.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-2.8442283395587035e-09 0.15586629300675067 -0.001136621976377822" rpy="0 0 0"/>
+    <mass value="8.618672001754616"/>
+    <inertia ixx="0.104305" iyy="0.115854" izz="0.220069" ixy="0.0" iyz="-0.000266" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Não_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://(Não_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+</robot>
